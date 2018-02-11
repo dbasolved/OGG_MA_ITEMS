@@ -1,0 +1,6 @@
+{
+    "$schema":"ogg:command",
+    "name":"stop",
+    "processName":"IREPSOE",
+    "processType":"replicat"
+}

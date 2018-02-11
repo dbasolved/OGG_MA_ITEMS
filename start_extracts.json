@@ -1,0 +1,6 @@
+{
+    "$schema":"ogg:command",
+    "name":"start",
+    "processName":"IEXTSOE",
+    "processType":"extract"
+}

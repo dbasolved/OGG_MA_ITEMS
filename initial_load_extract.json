@@ -1,0 +1,13 @@
+{
+"description": "Create an initial load extract - File Based",
+"config": 
+    [ 
+        "Extract LOAD", 
+        "UseridAlias SGGATE", 
+        "ExtFile CA Megabytes 250 Purge", 
+        "sourcecatalog pdb1", 
+        "Table test_user.lrg_table, keycols(ID), SQLPredicate \"As of SCN 5993633\";" 
+    ], 
+    "source": "tables", 
+    "status": "running"
+}

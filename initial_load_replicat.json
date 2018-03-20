@@ -1,0 +1,24 @@
+{
+    "description": "Create an initial load replicat - File Based",
+    "checkpoint": {
+        "table": "ggate.checkpoint"
+    } ,
+    "config": [ 
+        "Replicat RLOAD", 
+        "UseridAlias TGGATE", 
+        "sourcecatalog pdb1;", 
+        "Map pdb1.test_user.lrg_table, Target test_user.lrg_table;" 
+    ],
+    "credentials": {
+        "alias": "TGGATE"
+    },
+    "mode": {
+        "parallel": false,
+        "type": "nonintegrated"
+    },
+    "registration": "none",
+    "source": {
+        "name": "CB"
+    }, 
+    "status": "running"
+}

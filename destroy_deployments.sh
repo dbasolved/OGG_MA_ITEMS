@@ -14,13 +14,13 @@
 #Usage:
 #To run this script the command line needs to provide the password for the ServcieManager user login
 #
-# :> ./destroy_deployments.sh Welcome1
+# :> ./destroy_deployments.sh Welcome1 <deployment_name>
 #
 #Global Variables
 vPass=$1
 vAuth=`echo oggadmin:$vPass | base64`
 vHost0=localhost:16000
-vDeployments=(alpha charlie)
+vDeployments=($2)
 
 #echo $vAuth
 
